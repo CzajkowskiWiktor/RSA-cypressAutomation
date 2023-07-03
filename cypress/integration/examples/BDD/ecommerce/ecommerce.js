@@ -1,4 +1,4 @@
-import { Given,When,Then,And } from "@badeball/cypress-cucumber-preprocessor";
+import { Given,When,Then } from "@badeball/cypress-cucumber-preprocessor";
 import HomePage from "../../pageObjects/HomePage"
 import ProductsPage from "../../pageObjects/ProductsPage"
 import CheckoutPage from "../../pageObjects/CheckoutPage"
@@ -10,7 +10,7 @@ const productsPage = new ProductsPage()
 const checkoutPage = new CheckoutPage()
 const purchasePage = new PurchasePage()
 
-let nameInput
+var nameInput
 
 Given('I open Ecommerce page', () => 
 {
