@@ -1,0 +1,37 @@
+{
+  "name": "cypress-framework",
+  "version": "1.0.0",
+  "description": "my first project",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules\\.bin\\cypress run",
+    "cypress:open": "cypress open",
+    "headTest": "npm run test --headed",
+    "chromeTest": "npm run test --browser chrome",
+    "recordDashboardTest": "npx cypress run --record --key 0fd5ebf8-c4e5-4de3-b4d3-3f9af7fb21ba"
+  },
+  "keywords": [
+    "e2e",
+    "tests",
+    "cypress",
+    "automation",
+    "framework"
+  ],
+  "cypress-cucumber-preprocessor": {
+    "json": {
+      "enabled": true,
+      "output": "cypress/cucumberReports/results.json"
+    }
+  },
+  "author": "wiktor",
+  "license": "ISC",
+  "devDependencies": {
+    "@cypress/browserify-preprocessor": "^3.0.2",
+    "cypress": "^12.16.0",
+    "cypress-iframe": "^1.0.1",
+    "multiple-cucumber-html-reporter": "^3.4.0"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^18.0.1"
+  }
+}
